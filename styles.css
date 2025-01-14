@@ -1,0 +1,249 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Global Styles */
+.main_container{
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* flex-direction: column;   */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="month"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    /* width: 100%; */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link Styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for login, register, and main page */
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Centering the Main Tracker Page */
+#input-form,
+#summary,
+#records {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logout_btn{
+    background-color: #f44336; /* Red color for logout */
+    color: white;
+    border: none;
+    /* margin: auto; */
+    text-align: center;
+    /* justify-content: center; */
+    /* margin: auto; */
+    width: 35%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#logout-btn {
+    background-color: #f44336; /* Red color for logout */
+    color: white;
+    border: none;
+    margin: auto;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    width: 30%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#logout-btn:hover {
+    background-color: #e53935;
+}
+
+#records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#records table, th, td {
+    border: 1px solid #ddd;
+}
+
+#records th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+#records th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#records button {
+    background-color: #ffa500; /* Orange color for edit/delete buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#records button:hover {
+    background-color: #e65100;
+}
+
+/* Styling for month filter and download button */
+#download-report,
+#filter-month {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#download-report {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#download-report:hover {
+    background-color: #1976D2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* For tablets and small desktops */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 90%; /* Adjust width to fit smaller screens */
+        max-width: 350px; /* Keep form width controlled */
+    }
+
+    #input-form,
+    #summary,
+    #records {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #records table {
+        font-size: 14px; /* Smaller font size for tables */
+    }
+
+    #logout-btn {
+        margin-top: 20px; /* Add margin to avoid crowding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones */
+    h1 {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    #input-form,
+    #summary,
+    #records {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #records button {
+        font-size: 12px; /* Smaller buttons on mobile */
+    }
+
+    #download-report,
+    #filter-month {
+        font-size: 14px; /* Adjust button size */
+    }
+    
+    #records table {
+        font-size: 12px; /* Smaller font for tables */
+    }
+
+    #logout-btn {
+        margin-top: 20px; /* Margin for logout button */
+    }
+}
